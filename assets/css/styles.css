@@ -40,8 +40,9 @@ body {
     margin: auto;
     max-width: 640px;
     background-color: white;
-    margin: 15px auto;
+    margin: auto;
     border-radius: 5px;
+    max-height: fit-content;
 }
 
 .content {
