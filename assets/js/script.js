@@ -4,7 +4,6 @@ function meuEscopo() {
     let imcTexto
     const resultado = document.getElementById('resultado')
 
-
     function recebeEventoForm(evento) {
         const peso = document.querySelector('#peso')
         const altura = document.querySelector('#altura')
@@ -58,13 +57,8 @@ function meuEscopo() {
             resultado.style.backgroundColor = 'rgb(66, 236, 117)' // verde
         }
         resultado.style.display = 'block'
-
-        console.log(imc)
-
         evento.preventDefault()
     }
-
     form.addEventListener('submit', recebeEventoForm)
 }
-
 meuEscopo()
