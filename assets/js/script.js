@@ -49,7 +49,7 @@ function meuEscopo() {
             resultado.innerHTML = `<h2>Seu IMC é: ${imc} (${imcTexto})</h2>`
             resultado.style.backgroundColor = 'rgb(236, 66, 66)' // vermelho
         }
-        else if (imc > 25 && imc < 29.9) {
+        else if (imc >= 25 && imc <= 29.9) {
             resultado.innerHTML = `<h2>Seu IMC é: ${imc} (${imcTexto})</h2>`
             resultado.style.backgroundColor = 'rgb(236, 154, 66)' // vermelho
         }
