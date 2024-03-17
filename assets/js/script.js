@@ -11,6 +11,12 @@ function meuEscopo() {
         dados.peso = peso.value
         dados.altura = (altura.value / 100)
 
+        if(isNaN(peso.value)){
+            resultado.innerHTML = `<h2>Insira valores numéricos em "Peso"</h2>`
+            resultado.style.display = 'block'
+            resultado.style.backgroundColor = 'rgb(236, 66, 66)' // vermelho 
+        }else{
+
         const imc = (dados.peso / (dados.altura ** 2)).toFixed(1)
 
         if (imc < 18.5) {
@@ -55,6 +61,7 @@ function meuEscopo() {
         else {
             resultado.innerHTML = `<h2>Seu IMC é ${imc} (${imcTexto})</h2>`
             resultado.style.backgroundColor = 'rgb(66, 236, 117)' // verde
+        }
         }
         resultado.style.display = 'block'
         evento.preventDefault()
