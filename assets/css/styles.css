@@ -13,17 +13,21 @@ button {
     font-family: sans-serif;
 }
 
+h2 {
+    font-size: min(8vw, 22px);
+}
+
 h1 {
-    font-size: 45px;
+    font-size: min(8vw, 45px);
 }
 
 span {
     font-weight: bolder;
-    font-size: 28px;
+    font-size: min(8vw, 28px);
 }
 
 h5 {
-    font-size: 20px;
+    font-size: min(8vw, 20px);
     font-weight: lighter;
 }
 
@@ -75,7 +79,7 @@ body {
 .forms label {
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: min(8vw, 25px);
 }
 
 .forms input {
@@ -85,7 +89,7 @@ body {
     margin: 10px 0;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: min(8vw, 25px);
     border-radius: 15px;
     border: 2px solid
 }
@@ -98,7 +102,7 @@ button {
     cursor: pointer;
     width: 100%;
     padding: 12px;
-    font-size: 25px;
+    font-size: min(8vw, 25px);
     border-radius: 15px;
 }
 
@@ -110,4 +114,12 @@ button {
     width: fit-content;
     padding: 2px 5px;
     display: none;
+}
+
+@media (max-width: 550px) {
+
+
+    .tabela-imc , .tabela-resultado, .content h1:nth-child(1) {
+        display: none;
+    }
 }
